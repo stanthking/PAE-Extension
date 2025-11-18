@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Promena Auto-Extend Pro</title>
+    <style>
+        body {
+            width: 320px;
+            padding: 15px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            background: #1e1e1e;
+            color: #e0e0e0;
+        }
+        h1 {
+            font-size: 18px;
+            margin: 0 0 15px;
+            color: #ffcc00;
+            text-align: center;
+        }
+        .section {
+            background: rgba(255,255,255,0.05);
+            padding: 12px;
+            border-radius: 6px;
+            margin-bottom: 12px;
+        }
+        .section h3 {
+            margin: 0 0 10px;
+            font-size: 14px;
+            color: #4fa;
+        }
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 6px;
+            font-size: 12px;
+        }
+        .label {
+            color: #aaa;
+        }
+        .value {
+            font-weight: bold;
+            color: #fff;
+        }
+        .valid {
+            color: #28a745;
+        }
+        .invalid {
+            color: #dc3545;
+        }
+        .btn {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 13px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 8px;
+            transition: all 0.3s;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+        .btn-danger {
+            background: #dc3545;
+            color: white;
+        }
+        .btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        }
+        .footer {
+            text-align: center;
+            font-size: 10px;
+            color: #666;
+            margin-top: 10px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #444;
+            border-radius: 4px;
+            background: #2a2a2a;
+            color: #fff;
+            font-size: 12px;
+            box-sizing: border-box;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Promena Auto-Extend Pro</h1>
+
+    <div class="section">
+        <h3>License Status</h3>
+        <div id="license-status">
+            <div class="info-row">
+                <span class="label">Status:</span>
+                <span class="value" id="status-text">Checking...</span>
+            </div>
+            <div class="info-row" id="user-row" style="display:none;">
+                <span class="label">Licensed to:</span>
+                <span class="value" id="user-text"></span>
+            </div>
+            <div class="info-row" id="expires-row" style="display:none;">
+                <span class="label">Expires:</span>
+                <span class="value" id="expires-text"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="enter-key-section" style="display:none;">
+        <h3>Enter License Key</h3>
+        <input type="text" id="key-input" placeholder="XXXX-XXXX-XXXX-XXXX">
+        <button class="btn btn-primary" id="validate-btn">Validate Key</button>
+        <div id="key-error" style="color:#dc3545;font-size:11px;display:none;"></div>
+    </div>
+
+    <div class="section">
+        <h3>Extension Info</h3>
+        <div class="info-row">
+            <span class="label">Version:</span>
+            <span class="value" id="version-text">3.0.0</span>
+        </div>
+        <div class="info-row">
+            <span class="label">Status:</span>
+            <span class="value" id="ext-status">Active</span>
+        </div>
+    </div>
+
+    <button class="btn btn-primary" id="open-settings">Open Settings Page</button>
+    <button class="btn btn-danger" id="clear-license" style="display:none;">Clear License</button>
+
+    <div class="footer">
+        © 2025 Promena Auto-Extend Pro
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

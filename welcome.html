@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Promena Auto-Extend Pro - Welcome</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            padding: 40px;
+            max-width: 700px;
+            width: 100%;
+        }
+        h1 {
+            color: #333;
+            margin: 0 0 10px;
+            font-size: 32px;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+        .section {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        h3 {
+            color: #495057;
+            margin: 0 0 15px;
+        }
+        .step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        .step-num {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        .step-content {
+            flex: 1;
+        }
+        .feature-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .feature {
+            background: rgba(102,126,234,0.1);
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+        .feature strong {
+            color: #667eea;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #dee2e6;
+            border-radius: 6px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+        .btn-success {
+            background: #28a745;
+            color: white;
+        }
+        .status {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 6px;
+            display: none;
+        }
+        .status.success {
+            background: #d4edda;
+            color: #155724;
+            display: block;
+        }
+        .status.error {
+            background: #f8d7da;
+            color: #721c24;
+            display: block;
+        }
+        .shortcuts {
+            background: #212529;
+            color: #00ff00;
+            padding: 15px;
+            border-radius: 6px;
+            font-family: monospace;
+        }
+        .shortcuts div {
+            margin-bottom: 8px;
+        }
+        .shortcuts span {
+            color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Promena Auto-Extend Pro</h1>
+        <p class="subtitle">Professional auction time management extension</p>
+
+        <div class="section">
+            <h3>Step 1: Enter Your License Key</h3>
+            <input type="text" id="license-key" placeholder="XXXX-XXXX-XXXX-XXXX" style="text-align:center;letter-spacing:2px;font-size:20px;">
+            <button class="btn btn-primary" id="validate-btn" style="width:100%;margin-top:10px;">Activate License</button>
+            <div id="status" class="status"></div>
+        </div>
+
+        <div class="section">
+            <h3>Step 2: Navigate to Promena</h3>
+            <div class="step">
+                <div class="step-num">1</div>
+                <div class="step-content">Go to <strong>https://solutions.promena.net</strong></div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div class="step-content">Open the <strong>Bid Console</strong> for your auction</div>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div class="step-content">The extension will <strong>automatically activate</strong></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Features</h3>
+            <div class="feature-list">
+                <div class="feature"><strong>Auto-Extend</strong><br>Automatic time extension</div>
+                <div class="feature"><strong>Sound Alerts</strong><br>Audio notifications</div>
+                <div class="feature"><strong>Visual Alerts</strong><br>Toast notifications</div>
+                <div class="feature"><strong>Multi-Language</strong><br>TR / EN / RU</div>
+                <div class="feature"><strong>Draggable Panel</strong><br>Position anywhere</div>
+                <div class="feature"><strong>Simulation Mode</strong><br>Test safely</div>
+                <div class="feature"><strong>Statistics</strong><br>Track performance</div>
+                <div class="feature"><strong>Export/Import</strong><br>Backup settings</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Keyboard Shortcuts</h3>
+            <div class="shortcuts">
+                <div><span>Ctrl+P</span> - Pause / Resume auto-extend</div>
+                <div><span>Ctrl+E</span> - Manual extend (force)</div>
+                <div><span>Ctrl+S</span> - Toggle settings panel</div>
+                <div><span>Ctrl+H</span> - Toggle history panel</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Need Help?</h3>
+            <p>Click the extension icon in your browser toolbar to see your license status and settings.</p>
+            <p>The overlay panel on the Promena page shows real-time information and controls.</p>
+        </div>
+
+        <div style="text-align:center;color:#666;font-size:12px;margin-top:20px;">
+            Version 3.0.0 | © 2025 Promena Auto-Extend Pro
+        </div>
+    </div>
+
+    <script src="welcome.js"></script>
+</body>
+</html>
