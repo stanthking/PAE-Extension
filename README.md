@@ -1,4 +1,4 @@
-# Promena Auto-Extend Pro v3.2.5
+# Promena Auto-Extend Pro v4.0.0
 
 ## Installation
 
