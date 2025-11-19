@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Promena Auto-Extend Pro",
-  "version": "4.0.0",
-  "description": "Professional auction time extension tool for Promena platform with bid analysis",
+  "version": "4.1.0",
+  "description": "Professional auction time extension tool for Promena platform with dual-mode automation and bid analysis",
   "author": "Your Name",
 
   "permissions": [
